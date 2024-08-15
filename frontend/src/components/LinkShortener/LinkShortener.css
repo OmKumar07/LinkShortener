@@ -1,8 +1,7 @@
 /* styles.css */
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: Poppins;
     margin: 0;
     padding: 0;
   }
@@ -11,44 +10,41 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #222831;
+    border-radius: 10px;
   }
   
   h1 {
     text-align: center;
-    color: #333;
+    color: #EEEEEE;
   }
   
   form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
+    background-color: #EEEEEE;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
-  input[type="text"] {
+  .Original-input{
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    border-style: dashed;
   }
   
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
+
   
-  button:hover {
-    background-color: #0056b3;
+  .submit-btn:hover {
+    transform: scale(1.02);
+    background-color: #222831;
+    color: #EEEEEE;
+    
   }
   
   .shortened-link {
@@ -74,27 +70,43 @@ body {
   .shortened-link p {
     margin: 0;
     padding-right: 20px;
-  }
-
-
-.copy-button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
-  .copy-button:hover {
-    background-color: #218838;
-  }
-  
+  }  
   .copy-success {
-    margin-left: 15px;
+    margin-left: -5rem;
     color: #28a745;
     font-size: 14px;
   }
+  .input-container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .placeholder {
+    font-size: 16px;
+    color: #919191;
+    margin-right: 5px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .custom-input {
+    border: none;
+    border-bottom: 1px solid #333;
+    font-size: 16px;
+    padding: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    max-width: 120px;
+    background-color: #EEEEEE;
+  }
+  
+  .custom-input::placeholder {
+    color: #ccc;
+  }
+  .error-message{
+    color: #ff4b4b;
+  }
+  
   

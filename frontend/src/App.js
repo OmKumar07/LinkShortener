@@ -1,10 +1,10 @@
 // src/App.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import LinkShortener from './components/LinkShortener';
-import UserLinks from './components/UserLinks';
-import LoginButton from './components/LandingPage';
-import HamburgerMenu from './components/HamburgerMenu';
+import LinkShortener from './components/LinkShortener/LinkShortener';
+import UserLinks from './components/UserLinks/UserLinks';
+import LoginButton from './components/LandingPage/LandingPage';
+import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu';
 import './App.css';
 
 const App = () => {
